@@ -12,8 +12,6 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <maven.compiler.source>24</maven.compiler.source>
-        <maven.compiler.target>24</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -25,12 +23,32 @@
         </dependency>
 
         <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.4.11</version>
+        </dependency>
+
+
+        <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit-platform-engine</artifactId>
             <version>7.14.0</version>
         </dependency>
 
         <!-- Allure Cucumber adapter -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-cucumber7-jvm</artifactId>
+            <version>2.27.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.15.1</version>
+        </dependency>
+
+
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-cucumber7-jvm</artifactId>
@@ -110,8 +128,15 @@
         <dependency>
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
-            <version>5.1.1</version>
+            <version>5.0.9</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-suite-api</artifactId>
+            <version>1.10.0</version> <!-- match the rest of your JUnit platform version -->
+        </dependency>
+
 
 
 
